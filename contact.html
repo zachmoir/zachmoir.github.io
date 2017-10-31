@@ -27,6 +27,7 @@
     <script src="js/plugins.js"></script>
     <script src="js/min/waypoints.min.js"></script>
     <script src="js/jquery.counterup.js"></script>
+    <script src="js/gen_validatorv31.js"></script>
 
     <!-- Google Map -->
   <script>
@@ -110,7 +111,7 @@
             <div class="row">
               <div class="col-md-6 col-sm-12">
                 <div class="block">
-                  <form action="contact-form-handler.php">
+                  <form method="POST" name="contact" action="contact-form-handler.php">
                     <div class="form-group">
                       <input for='name' type="text" class="form-control" placeholder="Your Name">
                     </div>
@@ -125,7 +126,7 @@
               </div>
               <div class="col-md-6 col-sm-12">
                 <div class="block">
-                  <form action="contact-form-handler.php">
+                  <form method="POST" name="contact" action="contact-form-handler.php">
                     <div class="form-group-2">
                       <textarea for='message' class="form-control" rows="3" placeholder="Your Message"></textarea>
                     </div>
