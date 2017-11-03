@@ -980,3 +980,79 @@ Team
 .team-wrapper {
     margin: 0 auto;
 }
+
+@media only screen and (max-width: 1000px) {
+  .serviceBox{
+    padding: 25px;
+    margin: 5px 20px 40px 5px;
+    border: 1px solid #ddd;
+    position: relative;
+    transition: all 0.3s ease 0s;
+    width: 100%;
+    float: left;
+    display: block;
+    
+}
+}
+
+.serviceBox{
+    padding: 25px;
+    margin: 0 20px 40px 0;
+    border: 1px solid #ddd;
+    position: relative;
+    transition: all 0.3s ease 0s;
+    width: 100%;
+    float: left;
+    display: block;
+}
+.serviceBox:hover{ border: 1px solid #2b336c; }
+.serviceBox .service-icon{
+    display: inline-block;
+    font-size: 40px;
+    color:  #d34e1d;
+    margin-bottom: 10px;
+}
+.serviceBox .title{
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+    text-transform: uppercase;
+    margin: 0 0 10px 0;
+}
+.serviceBox .description{
+    font-size: 15px;
+    color: #777;
+    line-height: 25px;
+    margin: 0;
+}
+.serviceBox .read{
+    display: inline-block;
+    padding: 7px 20px;
+    font-size: 17px;
+    font-weight: 700;
+    color: #777;
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+    z-index: 1;
+    transition: all 0.3s ease 0s;
+}
+.serviceBox:hover .read{ color: #fff; }
+.serviceBox .read:after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    border: 1px solid #ddd;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transform: skewX(-15deg);
+    transition: all 0.3s ease 0s;
+}
+.serviceBox:hover .read:after{
+    background: #ff6f59;
+    border: 1px solid #ff6f59;
+}
