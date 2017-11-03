@@ -264,8 +264,21 @@ font header .navbar-default .navbar-nav li a:hover {
 /*--
 	Feature Start 
 --*/
+.parallax-text-box {
+    text-align: center;
+    margin:0 auto;
+    width: 35%;
+}
+
+@media only screen and (max-width: 1000px) {
+    .parallax-text-box {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+}
 #feature {
-  background: url("../img/featue-bg.jpg");
+  background: url("../img/desk-gb.jpg");
   background-position: 50% 94px;
   width: 100%;
   display: block;
