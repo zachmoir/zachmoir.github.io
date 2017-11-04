@@ -1056,3 +1056,38 @@ Team
     background: #ff6f59;
     border: 1px solid #ff6f59;
 }
+.heading-block {
+    margin-bottom: 10px;
+}
+
+.heading-block:after {
+    content: '';
+    display: block;
+    margin-top: 30px;
+    width: 40px;
+    border-top: 2px solid #444;
+}
+.featureList, .featureList ul {
+  margin-top: 0;
+  padding-left: 3em;
+  list-style-type: none;
+}
+.featureList li:before {
+  position: absolute;
+  margin-left: -1.3em;
+  font-weight: bold;
+}
+.featureList li.tick:before {
+  content: "\2713";
+  color: limegreen;
+}
+.tick {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+}
+.hideme
+{
+    opacity:0;
+}

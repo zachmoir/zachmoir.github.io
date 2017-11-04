@@ -59,8 +59,7 @@
                         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                           <ul class="nav navbar-nav navbar-right">
                             <li><a href="index.html">Home</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="team.html">Team</a></li>
+                            <li><a href="about.html">About Us</a></li>
                             <li><a href="services.html">Services</a></li>
                             <li><a href="contact.html">Contact</a></li>
                             </li>
@@ -179,9 +178,60 @@
                                 <span>Managing Director</span>
                             </div>
                         </div>
+            
+            <div class="block">
+              <h2 style="font-family: novecento;">MC2 is committed to providing hands on, personalized service. MC2 is here for you.</h2>
+            </div>
 
                     </div>
+<center> 
+        <div class="heading-block">
+                  	<h3 style="font-family: novecento;margin-top: 30px;">About Us</h3>
+					</div>
+    <p style="font-style: italic;width: 30%;">We help our clients get their businesses off the ground, grow and capture the value. Take a look at some of our past experiences. </p>
+        </center>
+        	<div class="row">
 
+				<div class="col-md-4">
+					<div class="box animate-box" style="text-align: center;">
+						<div class="service-icon">
+                    <i class="ion-ios-checkmark" style="font-size: 4em;color: #d34e1d;"></i>
+                        </div>
+						<h3>North American training company</h3>
+						<p>Supported executive team with strategic advisory, planning, facilitation of key account focus groups, provision of interim management services</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="box animate-box" style="text-align: center;">
+						<div class="service-icon">
+                    <i class="ion-ios-checkmark" style="font-size: 4em; color: #d34e1d;"></i>
+                        </div>
+						<h3>Ontario craft breweries</h3>
+						<p>Provided advisory services for several brewery clients including supporting development of business plans to be used for capital raise </p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="box animate-box" style="text-align: center;">
+						<div class="service-icon">
+                    <i class="ion-ios-checkmark" style="font-size: 4em;color: #d34e1d;"></i>
+                        </div>
+						<h3>Canadian food processor</h3>
+						<p>Supported senior management with development of business strategy and expansion plan including access to funding and financing</p>
+					</div>
+				</div>
+			</div>
+        <h3 style="'Roboto', sans-serif;margin-left: 5px;">We have also...</h3>
+        <ul class="featureList">
+             <div class="hideme">
+  <li class="tick">Helped a family business in the food sector with market research and strategic advisory services to support their geographic and product line expansion. We expect their plans to go live in 2018.</li>
+            </div>
+            <div class="hideme">
+  <li class="tick">Advised on the acquisition of GGS Canada Ltd. by Symriana Corporation and on the acquisition of several retail pharmacies from Remedy Holdings Inc. by Langford Pharmacies Ontario Inc. 
+            </div>
+            <div class="hideme">
+   <li class="tick">Helped a business owner to operationally integrate multiple companies within their portfolio.  This started with developing the business vision and strategy and working to ensure the new integrated company provides the quality services their clients need.
+            </div>
+    <ul>
                 </div>
     </div>
     </section>
@@ -212,8 +262,7 @@
                   <div class="footer-manu">
                     <ul>
                       <li><a href="index.html">Home</a></li>
-                        <li><a href="#">About us</a></li>
-                       <li><a href="team.html">Team</a></li>
+                        <li><a href="about.html">About Us</a></li>
                       <li><a href="services.html">Services</a></li>
                       <li><a href="contact.html">Contact us</a></li>
                     </ul>
@@ -227,6 +276,32 @@
 
 
 <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+    <script>
+    $(document).ready(function() {
+    
+    /* Every time the window is scrolled ... */
+    $(window).scroll( function(){
+    
+        /* Check the location of each desired element */
+        $('.hideme').each( function(i){
+            
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object ){
+                
+                $(this).animate({'opacity':'1'},500);
+                    
+            }
+            
+        }); 
+    
+    });
+    
+});
+    
+    </script>
         
     </body>
 </html>
