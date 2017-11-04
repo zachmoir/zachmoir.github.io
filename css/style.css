@@ -1065,6 +1065,9 @@ Team
     background: #ff6f59;
     border: 1px solid #ff6f59;
 }
+div.serviceBox:hover {
+     transform: scale(1.025);  
+}
 .heading-block {
     margin-bottom: 10px;
 }
