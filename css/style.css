@@ -965,6 +965,15 @@ Team
     letter-spacing: 2px;
     width: 100%;
 }
+@media only screen and (max-width: 1000px) {
+.team-title {
+    position: static;
+    display: inline-block;
+    letter-spacing: 2px;
+    width: 100%;
+}
+}
+
 .team-title h5 {
     margin-bottom: 0px;
     display: block;
@@ -1092,8 +1101,14 @@ Team
     opacity:0;
 }
 
+.heading-block-p {
+    width: 30%;
+    font-style: italic;
+}
+
 @media only screen and (max-width: 1000px) {
-    .heading-block p {
-        width: 100%;
-    }
+.heading-block-p {
+    width: 100%;
+    font-style: italic;
+}
 }
