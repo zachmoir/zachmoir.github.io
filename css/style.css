@@ -1115,3 +1115,9 @@ div.serviceBox:hover {
     font-style: italic;
 }
 }
+
+@media only screen and (max-width: 1000px) {
+    .gifwrap {
+        margin-right: 40px;
+    }
+}
