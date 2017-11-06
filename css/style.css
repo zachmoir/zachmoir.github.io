@@ -1075,7 +1075,7 @@ div.serviceBox:hover {
 .heading-block:after {
     content: '';
     display: block;
-    margin-top: 30px;
+    margin-top: 20px;
     width: 40px;
     border-top: 2px solid #444;
 }
@@ -1120,4 +1120,14 @@ div.serviceBox:hover {
     .gifwrap {
         margin-right: 40px;
     }
+}
+
+hr.style-one {
+border: 0;
+height: 1px;
+background: #333;
+background-image: -webkit-linear-gradient(left, #ccc, #333, #ccc);
+background-image: -moz-linear-gradient(left, #ccc, #333, #ccc);
+background-image: -ms-linear-gradient(left, #ccc, #333, #ccc);
+background-image: -o-linear-gradient(left, #ccc, #333, #ccc);
 }
