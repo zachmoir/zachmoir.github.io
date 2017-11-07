@@ -888,8 +888,9 @@ Team
 
 .team-member, .team-member .team-img {
     position: relative;
-    height: 250px;
-    width: 100%;
+    margin: 0 auto;
+    height: 400px;
+    width: 300px;
 }
 .team-member {
     overflow: hidden;
@@ -959,6 +960,7 @@ Team
     font-size: 16px;
 }
 .team-title {
+    text-align: center;
     position: static;
     padding: 20px 0;
     display: inline-block;
