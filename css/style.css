@@ -1181,3 +1181,9 @@ label {
 contact-form-wrapper {
     width: 80%;
 }
+
+@media only screen and (max-width: 1000px) {
+    .slogan {
+        width: 100%;
+    }
+}
