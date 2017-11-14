@@ -30,23 +30,6 @@
     <script src="js/gen_validatorv31.js"></script>
 
     <!-- Google Map -->
-  <script>
-      function initMap() {
-        var uluru = {lat: 43.6828423, lng: -79.42704130000004};
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 13,
-          center: uluru
-        });
-        var marker = new google.maps.Marker({
-          position: uluru,
-          map: map
-        });
-      }
-    </script>
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARlOGvJ7smsMLsCZL6Lklw9Va3supMGGE&callback=initMap">
-    </script>
-    <script src="js/google-map-init.js"></script>
 
 
     <script src="js/main.js"></script>
@@ -107,62 +90,65 @@
             </div>
         </section>
         <!-- contact form start -->
-        <section id="contact-form">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-6 col-sm-12">
-                <div class="block">
-                  <form method="POST" name="contact" action="contact-form-handler.php">
-                    <div class="form-group">
-                      <input for='name' type="text" class="form-control" placeholder="Your Name">
-                    </div>
-                    <div class="form-group">
-                      <input for='email' type="text" class="form-control" placeholder="Email Address">
-                    </div>
-                    <div class="form-group">
-                      <input for='subject' type="text" class="form-control" placeholder="Subject">
-                    </div>
-                  </form>
-                </div>
-              </div>
-              <div class="col-md-6 col-sm-12">
-                <div class="block">
-                  <form method="POST" name="contact" action="contact-form-handler.php">
-                    <div class="form-group-2">
-                      <textarea for='message' class="form-control" rows="3" placeholder="Your Message"></textarea>
-                    </div>
-                    <button style="background-color: #d34e1d"class="btn btn-default" type="submit">Send Message</button>
-                  </form>
-                </div>
-              </div>
-            </div>
-            <div id="contact-box" class="row">
-              <div class="col-md-6 col-sm-12">
-                <div class="block">
-                  <h2>Stop By For A visit</h2>
-                  <ul class="address-block">
-                    <li>
-                      <i class="fa fa-map-marker"></i>Address: 16 Humewood Drive, Toronto, ON M6C 2W2 
-                    </li>
-                    <li>
-                      <i class="fa fa-envelope-o"></i>Email: info@mc2ba.com
-                    </li>
-                    <li>
-                      <i class="fa fa-phone"></i>Phone:(647) 984-3076
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-md-6 col-sm-12">
-                <div class="block">
-                    <div class="google-map">
-                      <div id="map"></div>
-                    </div>
-                </div>
-              </div>
-            </div>
-          </div>
+        <form id="contact-form" method="post" action="contact.php" role="form">
+
+                        <div class="messages"></div>
+                        <div class="controls">
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="form_name">Firstname *</label>
+                                        <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="form_lastname">Lastname *</label>
+                                        <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="form_email">Email *</label>
+                                        <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="form_phone">Phone</label>
+                                        <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Please enter your phone">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="form_message">Message *</label>
+                                        <textarea id="form_message" name="message" class="form-control" placeholder="Message *" rows="4" required="required" data-error="Please,leave us a message."></textarea>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <input type="submit" style="background-color: #d34e1d; color: white;"class="btn btn-view-works" value="Send message">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <p class="text-muted"><strong>*</strong> These fields are required. </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </form>
         </section>
+
         <!-- Call to action Start -->
         <section id="call-to-action">
           <div class="container">
@@ -176,6 +162,7 @@
               </div>
             </div>
           </div>
+            <a id="back2Top" title="Back to top" href="#">&#10148;</a>
         </section>
         <!-- footer Start -->
         <footer>
@@ -196,7 +183,27 @@
           </div>
         </footer>
         
-        
-        
+<script src="js/return-to-top.js"></script>
+<script src="js/contact.js"></script>
+<script src="js/validator.js"></script>
+    <script> 
+    /*Scroll to top when arrow up clicked BEGIN*/
+$(window).scroll(function() {
+    var height = $(window).scrollTop();
+    if (height > 100) {
+        $('#back2Top').fadeIn();
+    } else {
+        $('#back2Top').fadeOut();
+    }
+});
+$(document).ready(function() {
+    $("#back2Top").click(function(event) {
+        event.preventDefault();
+        $("html, body").animate({ scrollTop: 0 }, "slow");
+        return false;
+    });
+
+});
+    </script>
       </body>
     </html>

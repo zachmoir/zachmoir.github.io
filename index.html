@@ -27,6 +27,7 @@
     <script src="js/plugins.js"></script>
     <script src="js/min/waypoints.min.js"></script>
     <script src="js/jquery.counterup.js"></script>
+     <script src="js/return-to-top.js"></script>
 
     <!-- Google Map -->
     <script src="https://maps.googleapis.com/maps/api/js"></script>
@@ -311,15 +312,8 @@
           </div>
         </div>
       </div>
+        <a id="back2Top" title="Back to top" href="#">&#10148;</a>
     </section>
-
-
-
-
-
-
-
-
     
     <!-- footer Start -->
     <footer>
@@ -342,7 +336,25 @@
             
             
   <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
-            
+    <script> 
+    /*Scroll to top when arrow up clicked BEGIN*/
+$(window).scroll(function() {
+    var height = $(window).scrollTop();
+    if (height > 100) {
+        $('#back2Top').fadeIn();
+    } else {
+        $('#back2Top').fadeOut();
+    }
+});
+$(document).ready(function() {
+    $("#back2Top").click(function(event) {
+        event.preventDefault();
+        $("html, body").animate({ scrollTop: 0 }, "slow");
+        return false;
+    });
+
+});
+    </script>            
     
     </body>
 </html>
