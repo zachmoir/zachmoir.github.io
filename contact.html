@@ -30,6 +30,24 @@
     <script src="js/gen_validatorv31.js"></script>
 
     <!-- Google Map -->
+      
+      <script>
+      function initMap() {
+        var uluru = {lat: 43.6532, lng: -79.3832};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 11,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARlOGvJ7smsMLsCZL6Lklw9Va3supMGGE&callback=initMap">
+    </script>
+    <script src="js/google-map-init.js"></script>
 
 
     <script src="js/main.js"></script>
@@ -90,64 +108,44 @@
             </div>
         </section>
         <!-- contact form start -->
-        <form id="contact-form" method="post" action="contact.php" role="form">
+    
+        <div class="contact-container">
+    <div class="form-container">
+ <form action="mail.php" method="POST">
+<p style="margin-bottom: 0px; margin-top: 10px;">Name:</p> <input type="text" name="name">
+<p style="margin-bottom: 0px; margin-top: 10px;">Email:</p> <input type="text" name="email">
+<p style="margin-bottom: 0px; margin-top: 10px;">Message:</p><textarea name="message" rows="6" cols="25"></textarea><br />
+ <div class="center-button">
+<input type="submit" value="Send" style="margin-bottom: 10px;background-color:#d34e1d;height: 55px;width: 130px;background-color: #FF814C;">
+ </div>
+</form>
+    </div>
+  
+<div class="form-container">   
+          <div class="section-title">
+            <h2 style="font-family: novecento;">Say Hello</h2>
+              <div class="section-p">
+            <p>You can also reach out to us by email or phone</p>
+              </div>
+          </div>
+    <div class="contact-icons">
+       <i class="ion-ios-telephone"></i>
+        <p>(647) 984-3076</p>
+    </div>
+    <div class="contact-icons">
+       <i class="ion-email"></i>
+        <a href="mailto:info@mc2ba.com" style="font-size: 15px;display: block;">info@mc2ba.com</a>
+    </div>
+            <div class="col-md-6 col-sm-12" style="width: 100%;">
+                <div class="block">
+                    <div class="google-map">
+                      <div id="map"></div>
+                    </div>
+                </div>
+              </div>
+</div>
+</div>
 
-                        <div class="messages"></div>
-                        <div class="controls">
-
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label for="form_name">Firstname *</label>
-                                        <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label for="form_lastname">Lastname *</label>
-                                        <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label for="form_email">Email *</label>
-                                        <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label for="form_phone">Phone</label>
-                                        <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Please enter your phone">
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <label for="form_message">Message *</label>
-                                        <textarea id="form_message" name="message" class="form-control" placeholder="Message *" rows="4" required="required" data-error="Please,leave us a message."></textarea>
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <input type="submit" style="background-color: #d34e1d; color: white;"class="btn btn-view-works" value="Send message">
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <p class="text-muted"><strong>*</strong> These fields are required. </p>
-                                </div>
-                            </div>
-                        </div>
-
-                    </form>
-        </section>
 
         <!-- Call to action Start -->
         <section id="call-to-action">
@@ -184,8 +182,6 @@
         </footer>
         
 <script src="js/return-to-top.js"></script>
-<script src="js/contact.js"></script>
-<script src="js/validator.js"></script>
     <script> 
     /*Scroll to top when arrow up clicked BEGIN*/
 $(window).scroll(function() {

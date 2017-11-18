@@ -1187,3 +1187,107 @@ contact-form-wrapper {
         width: 100%;
     }
 }
+
+.form-container {
+    display: inline-block;
+    position: relative;
+    width: 47%;
+    margin: 20px;
+    height: 100%;
+    margin-top: 15px;
+    
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-top: 0;
+}
+
+@media only screen and (max-width: 1000px) {
+.form-container {
+    display: block;
+    position: relative;
+    width: 90%;
+    height: 100%;
+}
+}
+
+@media only screen and (max-width: 1000px) {
+.form-container h2 {
+    margin: 0 auto;
+}
+}
+
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */  
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+input[type=submit] {
+    background-image: url("https://i.pinimg.com/originals/09/e3/00/09e30047f5ad4794d50929fbe033619f.gif");
+   background-repeat: no-repeat;
+   background-position: right;
+   background-size: contain;
+   color: white; /* Hide button text */
+   text-align: left;
+   padding: 10px 30px;
+   border: none;
+   border-radius: 8px;
+
+}
+
+.contact-container {
+    display: flex;
+}
+
+@media only screen and (max-width: 1000px) {
+.contact-container {
+    display: inline-block;
+    width: 100%;
+}
+}
+
+.contact-icons {
+   font-size: 70px;
+    display: inline-block;
+    margin: 0 auto;
+    margin-top: -60px;
+    width: 49%;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1000px) {
+.contact-icons {
+   font-size: 70px;
+    display: inline-block;
+    margin: 0 auto;
+    margin-top: -60px;
+    width: 49%;
+    text-align: center;
+}
+}
+
+.section-p {
+    margin: 0 auto;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1000px) {
+.section-p {
+    margin: 0 auto;
+    text-align: center;
+}
+}
+
+@media only screen and (max-width: 1000px) {
+.center-button {
+ text-align: center;
+ margin-bottom: 10px;
+}
+}
