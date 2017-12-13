@@ -1166,6 +1166,16 @@ button:focus{
   margin-left: 0;
 }
 
+.center-footer {
+    margin-left: 20%;
+}
+
+@media only screen and (max-width: 800px) {
+.center-footer {
+ margin-left: 0px;
+}
+}
+
 .flaticon-facebook-letter-logo:hover, .flaticon-twitter-logo:hover, .flaticon-dribbble-logo:hover, .flaticon-behance-logo:hover{
   color: #00AAFE;
 }
