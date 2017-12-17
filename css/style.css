@@ -12,7 +12,7 @@
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Helvetica Neue Light";
   -webkit-font-smoothing: antialiased;
 }
 h1,
@@ -21,7 +21,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Roboto', sans-serif;
+  font-family:"Helvetica Neue Light";
 }
 h2 {
   font-size: 30px;
@@ -32,7 +32,7 @@ h3 {
   font-weight: 300;
 }
 p {
-  font-size: 15px;
+  font-size: 16px;
   line-height: 28px;
 }
 .logo-img {
@@ -87,7 +87,7 @@ a:active {
 	Header Start 
 --*/
 header {
-  background: #fff;
+  background: white;
   padding: 20px 0;
 }
 header .navbar {
@@ -108,7 +108,7 @@ header .navbar-default .navbar-nav {
 header .navbar-default .navbar-nav li a {
   color: #333333;
   padding: 10px 26px;
-  font-size: 15px;
+  font-size: 20px;
 }
 font header .navbar-default .navbar-nav li a:hover {
   color: #000;
@@ -199,20 +199,33 @@ font header .navbar-default .navbar-nav li a:hover {
 
 #service .service-item i {
   font-size: 60px;
-  color: #4A4656;
+  color: #d34e1d;
+
 }
 #service .service-item h4 {
   padding-top: 20px;
   margin: 0;
   color: #666;
+  font-size: 24px;
 }
 #service .service-item p {
   color: #888;
   padding-top: 10px;
   margin: 0;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.8;
 }
+
+.bottom-service {
+    margin-top: 40px;
+}
+
+@media only screen and (max-width: 1000px) {
+.bottom-service {
+    margin-top: 0px;
+}
+}
+
 /*--
 	call-to-action Start 
 --*/
@@ -821,7 +834,7 @@ font header .navbar-default .navbar-nav li a:hover {
 	footer Start 
 --*/
 footer {
-  background: #F5F5F5;
+  background: #ededed;
   text-align: center;
   padding-top: 48px;
   padding-bottom: 55px;
@@ -1090,9 +1103,8 @@ div.serviceBox:hover {
 }
 .tick {
     margin-top: 10px;
-    font-size: 15px;
+    font-size: 17px;
     font-weight: 300;
-    font-family: 'Roboto', sans-serif;
 }
 .hideme
 {
@@ -1276,5 +1288,28 @@ input[type=submit] {
 .center-button {
  text-align: center;
  margin-bottom: 10px;
+}
+}
+
+.index-service-button {
+    margin-top: 9.5%;
+}
+
+@media only screen and (max-width: 1000px) {
+.index-service-button {
+    margin-top: 0%;
+}
+}
+
+.spacing-fix {
+    display: flex;
+}
+
+@media only screen and (max-width: 900px) {
+.spacing-fix {
+   display: block;
+   text-align: center;
+   width: 85%;
+    margin: 0 auto;
 }
 }
