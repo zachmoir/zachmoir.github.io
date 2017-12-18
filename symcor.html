@@ -11,8 +11,8 @@
   <link rel="stylesheet" href="temp/styles/one-page-wonder.css">
   <link rel="stylesheet" href="temp/styles/animate.css">
   <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
-<link rel="stylesheet" href="temp/styles/animate.css">
   <link rel="stylesheet" href="temp/styles/styles.css">
+  <link rel="stylesheet" href="temp/styles/responsive.css">
   <link rel="icon" href="assets/images/Favicon.png">
     
 </head>
@@ -51,7 +51,6 @@
           </div>
       </div>
     </header>
-    
     <section class="service">
       <div class="container">
         <div class="page-section text-center">
@@ -60,21 +59,21 @@
           <div class="row gutters-40" >
             <div class="col-md-4">
               <div class="thumbnail">
-                <i class="material-icons">group</i>
+                <i class="material-icons wow fadeInUp" data-wow-delay="0.5s">group</i>
                 <h4 class="service__title">Network</h4>
                 <p class="service__paragraph" style="margin-bottom: 8%;">Expand your knowledge  while understanding different perspectives and disscusing feedback on Friday’s networking session or Saturday’s social. Learn and raise your profile while increasing your connections!</p>
               </div>
             </div>
             <div class="col-md-4">
               <div class="thumbnail">
-                <i class="material-icons">trending_up</i>
+                <i class="material-icons wow fadeInUp" data-wow-delay="0.9s">trending_up</i>
                 <h4 class="service__title">Growth</h4>
                 <p class="service__paragraph" style="margin-bottom: 8%;">Gain insight on the non-stop progressing IT industry and emerge yourself further into a world filled with crucial, agile technology. Seize and take advantage of the opportunities, all while continuing to grow.</p>
               </div>
             </div>
             <div class="col-md-4">
               <div class="thumbnail">
-                <i class="material-icons">check</i>
+                <i class="material-icons wow fadeInUp" data-wow-delay="1.3s">check</i>
                 <h4 class="service__title">Skills</h4>
                 <p class="service__paragraph">Bridge the gap between theoretical aspects learnt at school and the practical aspects of the IT feild. By leveraging technology to solve business problems, you will further improve upon soft skills such as, critcal thinking, communication, etc.</p>
               </div>
@@ -90,7 +89,7 @@
         <div class="row align-items-center">
           <div class="col-md-6 order-2">
             <div class="right-img">
-              <img class="img-fluid rounded-circle" src="assets/images/symcor.jpg" alt="" style="height: 35%;width: 85%;">
+              <img class="img-fluid rounded-circle wow fadeInRight" data-wow-delay="1s" src="assets/images/symcor.jpg" alt="" style="height: 35%;width: 85%;">
             </div>
           </div>
           <div class="col-md-6 order-1">
@@ -108,7 +107,7 @@
         <div class="row align-items-center">
           <div class="col-md-6">
             <div class="left-img">
-              <img class="img-fluid rounded-circle" src="assets/images/symcor.jpg" alt="" style="height: 35%; width: 85%;">
+              <img class="img-fluid rounded-circle wow fadeInLeft" data-wow-delay="1s" src="assets/images/symcor.jpg" alt="" style="height: 35%; width: 85%;">
             </div>
           </div>
           <div class="col-md-6">
@@ -362,11 +361,12 @@
 
   <script src="assets/jquery/jquery-3.2.1.min.js"></script>
   <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-<script src="assets/js/aos.js"></script>
-      <script type="text/javascript">
-              AOS.init();
-        </script>
-  
+<script src="assets/js/wow.js"></script>
+
+<script>
+  var wow = new WOW();
+  wow.init(); 
+</script>
   <script>
 $('a').click(function(){
     $('html, body').animate({
