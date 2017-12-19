@@ -5,6 +5,10 @@
 /*--
 	Common Css
 --*/
+.wow {
+  visibility: hidden;
+}
+
 .Novecentosanswide-Normal { 
 	font-family: Novecentosanswide-Normal;
 	font-weight: normal;
