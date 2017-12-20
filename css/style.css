@@ -5,18 +5,17 @@
 /*--
 	Common Css
 --*/
+@font-face {
+    font-family: HelveticaNeue; 
+    src: url('../fonts/HelveticaNeueLight.otf');
+}
+
 .wow {
   visibility: hidden;
 }
 
-.Novecentosanswide-Normal { 
-	font-family: Novecentosanswide-Normal;
-	font-weight: normal;
-	font-style: normal;
-}
-
 body {
-  font-family: "Helvetica Neue Light";
+  font-family: "HelveticaNeue";
   -webkit-font-smoothing: antialiased;
 }
 h1,
@@ -25,7 +24,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family:"Helvetica Neue Light";
+  font-family:"HelveticaNeue";
 }
 h2 {
   font-size: 30px;
@@ -81,9 +80,10 @@ a:active {
   text-transform: uppercase;
   font-size: 28px;
   font-weight: 600;
+  font-family: "HelveticaNeue";
 }
 .section-title p {
-  font-family: 'Volkhov', serif;
+  font-family: "HelveticaNeue";
   font-style: italic;
   color: #666;
 }
@@ -112,7 +112,7 @@ header .navbar-default .navbar-nav {
 header .navbar-default .navbar-nav li a {
   color: #333333;
   padding: 10px 26px;
-  font-size: 20px;
+  font-size: 18px;
 }
 font header .navbar-default .navbar-nav li a:hover {
   color: #000;
@@ -228,6 +228,18 @@ font header .navbar-default .navbar-nav li a:hover {
 .bottom-service {
     margin-top: 0px;
 }
+}
+
+.strategy-buttons {
+    background-color: #d34e1d; 
+    color: white;
+    display: block;
+    width: 100px;
+    margin: 0 auto;
+}
+
+.strategy-buttons:hover {
+    color: white;
 }
 
 /*--
