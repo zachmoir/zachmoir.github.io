@@ -1254,6 +1254,8 @@ input[type=submit] {
    padding: 10px 30px;
    border: none;
    border-radius: 8px;
+   width: 105px;
+   background-color: #FF814C;
 
 }
 

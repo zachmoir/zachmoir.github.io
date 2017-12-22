@@ -1,11 +1,12 @@
-<?php $name = $_POST['name'];
+<?php
+$name = $_POST['name'];
 $email = $_POST['email'];
 $message = $_POST['message'];
-$formcontent="From: $name \n Message: $message";
-$recipient = "moirzach5318@gmail.com";
-$subject = "Contact Form";
+$formcontent=" From: $name \n Message: $message";
+$recipient = "info@mc2ba.com";
+$subject = "Contact Form Message";
 $mailheader = "From: $email \r\n";
-mail($recipient, $subject, $formcontent, $mailheader);
-header('Location: http://mc2ba.com/thanks');
-exit();
+mail($recipient, $subject, $formcontent, $mailheader) or die("Error!");
+header('Location: thanks.html');
+exit;
 ?>
