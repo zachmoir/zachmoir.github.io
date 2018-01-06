@@ -4314,12 +4314,12 @@ textarea.input-group-sm>.input-group-btn>.btn {
 }
 .navbar-fixed-bottom .navbar-collapse,
 .navbar-fixed-top .navbar-collapse {
-    max-height: 340px
+    max-height: 340px;
 }
 @media (max-device-width: 480px) and (orientation: landscape) {
     .navbar-fixed-bottom .navbar-collapse,
     .navbar-fixed-top .navbar-collapse {
-        max-height: 200px
+        max-height: 200px;
     }
 }
 .container-fluid>.navbar-collapse,
@@ -4352,7 +4352,6 @@ textarea.input-group-sm>.input-group-btn>.btn {
     position: fixed;
     right: 0;
     left: 0;
-    z-index: 1030
 }
 @media (min-width: 768px) {
     .navbar-fixed-bottom,
