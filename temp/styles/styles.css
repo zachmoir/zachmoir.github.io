@@ -587,7 +587,7 @@ button:focus{
     }
 
 .project__title{
-    font-size: 16px;
+    font-size: 17px;
     color: #4f4f4f;
     font-weight: bold;
   }
@@ -675,7 +675,7 @@ button:focus{
   }
 
 #myModal p {
-    font-family: "Roboto", sans-serif;
+    font-family: 'Roboto';
 }
 
 #myModal .embed-responsive {
