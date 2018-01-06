@@ -1331,3 +1331,17 @@ input[type=submit] {
     margin: 0 auto;
 }
 }
+
+.experiences-header {
+     width: 50%;
+    margin: 0 auto;
+    font-size: 25px;
+}
+
+@media only screen and (max-width: 900px) {
+.experiences-header {
+     width: 90%;
+    margin: 0 auto;
+    font-size: 25px;
+}
+}

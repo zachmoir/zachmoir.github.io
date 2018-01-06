@@ -654,10 +654,6 @@ button:focus{
       outline: 0;
     }
 
-#myModal{
-  background: rgba(0, 0, 0, 0.8);
-}
-
 #myModal .close{
     background: #00aafe !important;
     z-index: 890;
@@ -677,6 +673,10 @@ button:focus{
 #myModal .modal-body{
     padding: 0;
   }
+
+#myModal p {
+    font-family: "Roboto", sans-serif;
+}
 
 #myModal .embed-responsive {
     height: 489px;
