@@ -4389,7 +4389,7 @@ textarea.input-group-sm>.input-group-btn>.btn {
 @media only screen and (max-width: 992px) {
   .navbar-brand>img {
     display: block;
-    margin: 0 auto;
+    margin-top: -20px;
 }   
 }
 @media (min-width: 768px) {
@@ -4415,10 +4415,8 @@ textarea.input-group-sm>.input-group-btn>.btn {
 .navbar-toggle {
     position: relative;
     float: right;
-    padding: 9px 10px;
-    margin-top: 8px;
-    margin-right: 5%;
-    margin-bottom: 8px;
+    margin-top: -10px;
+    margin-left: -15%;
     background-color: transparent;
     background-image: none;
     border: 1px solid transparent;
