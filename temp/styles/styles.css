@@ -67,6 +67,10 @@ html,body {
 }
 }
 
+header {
+    z-index: 999;
+}
+
 a:hover, a:focus{
   text-decoration: none;
 }
@@ -138,24 +142,9 @@ button:focus{
     z-index: -1;
   }
 
-.header {
-    z-index: 9999;
-}
-
 .header .navbar{
     padding-top: 30px;
     margin-bottom: 200px;
-  }
-
-@media screen and (max-width: 450px) {
-      .header .navbar{
-        margin-bottom: 150px;
-      }
-    }
-
-.header .navbar-brand{
-    font-size: 26px;
-    font-weight: bold;
   }
 
 @media screen and (max-width: 450px) {
