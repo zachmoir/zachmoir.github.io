@@ -151,7 +151,7 @@ button:focus{
     margin-right: 17px;
   }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 500px) {
 .header .navbar{
     padding-top: 30px;
     margin-bottom: 200px;
