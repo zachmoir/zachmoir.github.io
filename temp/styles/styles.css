@@ -146,6 +146,8 @@ button:focus{
 .header .navbar{
     padding-top: 30px;
     margin-bottom: 200px;
+    background: rgba(33, 60, 89, 0.8);
+    margin-right: 17px;
   }
 
 @media screen and (max-width: 450px) {
