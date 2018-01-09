@@ -2041,7 +2041,8 @@ pre code {
         width: 41.66666667%
     }
     .col-md-4 {
-        width: 32%
+        width: 32%;
+        display: flex;
     }
     .col-md-3 {
         width: 25%
@@ -4306,6 +4307,7 @@ textarea.input-group-sm>.input-group-btn>.btn {
     .navbar-fixed-top .navbar-collapse,
     .navbar-static-top .navbar-collapse {
         padding-right: 0;
+        padding-left: 0;
         padding-left: 0;
         color: black;
         
