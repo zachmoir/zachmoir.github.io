@@ -4284,6 +4284,7 @@ textarea.input-group-sm>.input-group-btn>.btn {
 }
 .navbar-collapse.in {
     overflow-y: auto;
+    margin-right: -30px;
         
 }
 @media (min-width: 768px) {

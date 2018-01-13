@@ -55,6 +55,7 @@ html,body {
   height: 100%;
   margin: 0px;
   padding: 0px;
+  overflow-x: hidden;
 
 }
 
@@ -201,7 +202,6 @@ button:focus{
 
 .header .navbar{
     padding-top: 30px;
-    margin-bottom: 200px;
     background: rgba(33, 60, 89, 0.8);
     width: 100%;
   }
@@ -264,7 +264,7 @@ button:focus{
 .header .navbar .navbar-nav > li > a, .header .navbar .navbar-brand, .header .navbar .navbar-nav > li > a:focus{
     background-color: transparent;
     color: #fff;
-    margin-right: 20px;
+    margin-right: 40px;
     margin-top: -10px;
     z-index: 99999999999999999999;
   }
