@@ -2221,7 +2221,6 @@
     transition-timing-function: ease-out
 }
 .hvr-underline-from-center:active:before,
-.hvr-underline-from-center:focus:before,
 .hvr-underline-from-center:hover:before {
     left: 0;
     right: 0
