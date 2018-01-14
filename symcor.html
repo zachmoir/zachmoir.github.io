@@ -51,9 +51,9 @@
       
       
     <section class="service">
-      <div class="container" id="about">
+      <div class="container">
         <div class="page-section text-center">
-          <h2 class="page-section__title">Welcome To Symcor Case Competition</h2>
+          <h2 class="page-section__title" id="about">Welcome To Symcor Case Competition</h2>
           <p class="page-section__paragraph">Open to all 3rd, 4th, and 5th year students, Symcor Case Competition, hosted by the Information Technology Management Students’ Association, in collaboration with McMaster University, University of Toronto, and York University, aims to bridge the gap between the theoretical aspects of technology learned at school with the practical aspects from the IT field. On January 27th, 2018, delegates will compete head-to-head to challenge their capabilities, defy boundaries, and put their skills to the test.  </p>
           <div class="row gutters-40" >
             <div class="col-md-4">
@@ -212,11 +212,11 @@
         </div>
       </section>
       
-      <div class="container" id="partners">
+      <div class="container">
         <section class="project">
           <div class="page-section">
             <div class="text-center">
-              <h2 class="page-section__title">Partners</h2>
+              <h2 class="page-section__title" id="partners">Partners</h2>
               <p class="page-section__paragraph">The Information Technology Management Students’ Association would like to thank our partners for their hand in making Symcor Case Competition an annual success. Our partners have played an integral role in building and executing a vision of an entire team. Thank you. </p>
             </div>
             <div class="row gutters-50">
@@ -410,7 +410,7 @@ $('a').click(function(){
 <script>
 // Check distance to top and display back-to-top.
 $( window ).scroll( function() {
-	if ( $( this ).scrollTop() > 800 ) {
+	if ( $( this ).scrollTop() > 700 ) {
 		$( '.back-to-top' ).addClass( 'show-back-to-top' );
 	} else {
 		$( '.back-to-top' ).removeClass( 'show-back-to-top' );
@@ -419,7 +419,7 @@ $( window ).scroll( function() {
 
 // Click event to scroll to top.
 $( '.back-to-top' ).click( function() {
-	$( 'html, body' ).animate( { scrollTop : 0 }, 800 );
+	$( 'html, body' ).animate( { scrollTop : 0 }, 700 );
 	return false;
 });
 </script>
